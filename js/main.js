@@ -218,6 +218,7 @@ AFRAME.registerComponent('playerCam', {
 
 // asteroid - WHEN added
 AFRAME.registerComponent('debris', {
+    multiple: true,
     init: function () {
         this.direction = 1;
         this.position = new THREE.Vector3();
@@ -251,6 +252,7 @@ AFRAME.registerComponent('debris', {
 
 // nebulae- WHEN added
 AFRAME.registerComponent('neb', {
+    multiple: true,
     init: function () {
         this.direction = 1;
         this.position = new THREE.Vector3();
@@ -322,6 +324,7 @@ AFRAME.registerComponent('cursor-listener', {
 
 // // planet rotation and compoenent etc
 AFRAME.registerComponent('planet', {
+    multiple: true,
     init: function () {
         this.direction = 1;
         let data = this.data;
