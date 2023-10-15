@@ -24,11 +24,11 @@ speech.lang = "en";
 // Planet generation 
 var digrams = "ABOUSEITILETSTONLONUTHNO" +
     "..LEXEGEZACEBISOUSESARMAINDIREA.ERATENBERALAVETIEDORQUANTEISRION";
-let galaxyName = genGalaxyName();
+let galaxyName;
 
 
 window.onload = async function () {
-    galaxyName = genGalaxyName();
+    galaxyName = await genGalaxyName();
     // const shipCam = document.getElementById('camera');
     // shipCam.far = 500;
     await beginGame();
