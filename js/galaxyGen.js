@@ -21,7 +21,11 @@ let initStarfield = false;
 let warpMode = false;
 let speech = new SpeechSynthesisUtterance();
 speech.lang = "en";
+// Planet generation 
+var digrams = "ABOUSEITILETSTONLONUTHNO" +
+    "..LEXEGEZACEBISOUSESARMAINDIREA.ERATENBERALAVETIEDORQUANTEISRION";
 let galaxyName = genGalaxyName();
+
 
 window.onload = async function () {
     galaxyName = genGalaxyName();
@@ -655,9 +659,7 @@ function createStars(amount) {
     // randomPlanetId = 'planet' + [getRandomInt(0, planetnames.length)];
 }
 
-// Planet generation 
-var digrams = "ABOUSEITILETSTONLONUTHNO" +
-    "..LEXEGEZACEBISOUSESARMAINDIREA.ERATENBERALAVETIEDORQUANTEISRION";
+
 
 function rotatel(x) {
     var tmp = (x & 255) * 2;
