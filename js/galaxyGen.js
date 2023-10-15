@@ -740,11 +740,6 @@ function genGalaxyName() {
     return randGalaxyName;
 }
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 function generatePlanet(color, areaSize){
     let planetSectorArray = [];
@@ -817,11 +812,7 @@ function generateMana(numMana){
 
 export { generatePlanet};
 
-function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+
 
 function getRandomColor(colors) {
     return colors[Math.floor(Math.random() * colors.length)];
