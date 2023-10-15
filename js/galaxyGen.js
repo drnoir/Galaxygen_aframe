@@ -810,15 +810,6 @@ function generateMana(numMana){
     }
 }
 
-export { generatePlanet};
-
-
-
-function getRandomColor(colors) {
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-
-
 //draw the background stars
 AFRAME.registerComponent('star-system', {
     schema: {
