@@ -28,7 +28,7 @@ let galaxyName;
 
 
 window.onload = async function () {
-    galaxyName = await genGalaxyName();
+    // galaxyName = await genGalaxyName();
     // const shipCam = document.getElementById('camera');
     // shipCam.far = 500;
     await beginGame();
@@ -377,7 +377,7 @@ function newScene() {
     asteroidSystemsContainer.setAttribute('visible', true);
     spaceScene.appendChild(asteroidSystemsContainer);
 
-    galaxyName = genGalaxyName();
+    // galaxyName = genGalaxyName();
     starsNum = getRandomInt(20, 50);
 
     // generate primitives
@@ -730,17 +730,17 @@ function genNames(numPlanets) {
     return names;
 }
 
-function genGalaxyName() {
-    let randGalaxyName = '';
-    let pairs;
-    let seeds = [ getRandomInt(400,60000),getRandomInt(100,700),getRandomInt(200,60000)];
-    pairs = digrams.substring(24);
+// function genGalaxyName() {
+//     let randGalaxyName = '';
+//     let pairs;
+//     let seeds = [ getRandomInt(400,60000),getRandomInt(100,700),getRandomInt(200,60000)];
+//     pairs = digrams.substring(24);
 
-    randGalaxyName = makename(pairs, seeds);
-    seeds = tweakseed(next(seeds));
+//     randGalaxyName = makename(pairs, seeds);
+//     seeds = tweakseed(next(seeds));
 
-    return randGalaxyName;
-}
+//     return randGalaxyName;
+// }
 
 
 function generatePlanet(color, areaSize){
